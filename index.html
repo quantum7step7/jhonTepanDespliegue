@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Hobbies de Joan Tepan</title>
+    <link rel="stylesheet" href="diseno_joan.css">
+    <script src="logica_formulario.js" defer></script>
+</head>
+<body data-pagina="inicio">
+    <header class="cabecera-joan">
+        <div class="cabecera-contenido">
+            <span class="etiqueta-sitio">Mis hobbies</span>
+            <h1 class="titulo-principal">Joan Tepan</h1>
+        </div>
+    </header>
+
+    <main class="zona-principal">
+        <!-- Dos ventanas una al lado de la otra -->
+        <section class="bloque-doble">
+            <article class="tarjeta-hobby">
+                <h2 class="titulo-tarjeta">Quién soy</h2>
+                <p>
+                    Soy Joan Tepan, una persona curiosa que disfruta aprender cosas nuevas
+                    y compartir lo que descubre. Me gusta equilibrar la tecnología con
+                    actividades creativas y momentos tranquilos.
+                </p>
+
+                <!-- Imagen de tecnología -->
+                <figure class="contenedor-foto-joan">
+                    <img
+                        class="foto-joan"
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Programming_code.jpg/960px-Programming_code.jpg"
+                        alt="Pantalla con código de programación en una computadora">
+                </figure>
+            </article>
+
+            <article class="tarjeta-hobby">
+                <h2 class="titulo-tarjeta">Mis hobbies favoritos</h2>
+                <ul class="lista-hobbies-joan">
+                    <li>Escuchar y descubrir música nueva</li>
+                    <li>Tocar guitarra y practicar canciones</li>
+                    <li>Jugar fútbol con amigos</li>
+                    <li>Explorar herramientas de diseño y programación</li>
+                    <li>Leer artículos sobre ciencia y tecnología</li>
+                    <li>Caminar y tomar fotografías casuales</li>
+                </ul>
+
+                <!-- Galería de hobbies con imágenes -->
+                <div class="galeria-hobbies">
+                    <figure class="hobby-imagen">
+                        <img
+                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/GuitareClassique5.png/640px-GuitareClassique5.png"
+                            alt="Guitarra clásica apoyada sobre una silla">
+                        <figcaption>Música y práctica de guitarra.</figcaption>
+                    </figure>
+
+                    <figure class="hobby-imagen">
+                        <img
+                            src="img/jhon.jpeg"
+                            alt="Balón de fútbol sobre césped">
+                        <figcaption>Jhon Tepan.</figcaption>
+                    </figure>
+                </div>
+            </article>
+        </section>
+
+        <!-- Formulario de contacto debajo de las dos ventanas -->
+        <section class="bloque-contacto-inicio">
+            <h2 class="titulo-seccion-joan">Escríbeme un mensaje</h2>
+            <p class="texto-intro-contacto">
+                Si quieres dejar un comentario sobre mis hobbies o simplemente saludar,
+                puedes usar este formulario. Tu mensaje se guardará en tu navegador.
+            </p>
+
+            <form id="formulario-inicio-joan" class="formulario-joan" novalidate>
+                <div class="fila-formulario">
+                    <div class="campo-formulario">
+                        <label for="nombre-inicio-joan">Nombre</label>
+                        <input
+                            type="text"
+                            id="nombre-inicio-joan"
+                            name="nombre"
+                            placeholder="Escribe tu nombre"
+                            required
+                            pattern="^[A-Za-zÁÉÍÓÚáéíóúÑñ\\s]+$">
+                        <span class="alerta-error alerta-error-nombre"></span>
+                    </div>
+
+                    <div class="campo-formulario">
+                        <label for="correo-inicio-joan">Correo</label>
+                        <input
+                            type="email"
+                            id="correo-inicio-joan"
+                            name="correo"
+                            placeholder="tucorreo@ejemplo.com"
+                            required>
+                        <span class="alerta-error alerta-error-correo"></span>
+                    </div>
+                </div>
+
+                <div class="campo-formulario">
+                    <label for="mensaje-inicio-joan">Mensaje (máx. 100 caracteres)</label>
+                    <textarea
+                        id="mensaje-inicio-joan"
+                        name="mensaje"
+                        rows="3"
+                        maxlength="100"
+                        placeholder="Escribe tu mensaje"
+                        required></textarea>
+                    <span class="alerta-error alerta-error-mensaje"></span>
+                </div>
+
+                <button type="submit" class="boton-envio">Enviar mensaje</button>
+
+                <p class="texto-exito"></p>
+            </form>
+
+            <div class="zona-enlace-contacto">
+                <a href="contacto_joan.html" class="boton-secundario-joan">
+                    Ir a la página de contacto completa
+                </a>
+            </div>
+        </section>
+
+        <!-- Tabla de materias que quiere aprender -->
+        <section class="bloque-materias">
+            <h2 class="titulo-seccion-joan">Materias que quiero aprender</h2>
+            <p class="texto-intro-contacto">
+                A lo largo de la carrera me gustaría profundizar en las siguientes materias
+                para complementar mis hobbies y mi formación profesional.
+            </p>
+
+            <div class="contenedor-tabla">
+                <table class="tabla-materias">
+                    <thead>
+                        <tr>
+                            <th>Materia</th>
+                            <th>Área</th>
+                            <th>Semestre objetivo</th>
+                            <th>Motivo</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Programación Web</td>
+                            <td>Desarrollo</td>
+                            <td>1.º - 2.º</td>
+                            <td>Me aficiona aprender de arquitectura de software microservicios para entender como se comportan estos sistemas inteligentes.</td>
+                        </tr>
+                        <tr>
+                            <td>Bases de Datos</td>
+                            <td>Datos</td>
+                            <td>2.º - 3.º</td>
+                            <td>Aprender a guardar y organizar información de forma eficiente.</td>
+                        </tr>
+                        <tr>
+                            <td>Inteligencia Artificial</td>
+                            <td>IA / Machine Learning</td>
+                            <td>3.º - 4.º</td>
+                            <td>Aplicar modelos inteligentes a proyectos relacionados con música y juegos puede ser un desafio. 
+                                Pero este campo actualmente esta en auje por lo que quiero incursionar</td>
+                        </tr>
+                        <tr>
+                            <td>Redes de Computadoras</td>
+                            <td>Infraestructura</td>
+                            <td>3.º</td>
+                            <td>Quiero comprender cómo se comunican los dispositivos y servicios en línea.</td>
+                        </tr>
+                        <tr>
+                            <td>Seguridad Informática</td>
+                            <td>Ciberseguridad</td>
+                            <td>4.º</td>
+                            <td>La ciberseguridad siempre me ha llamado la atencion por la cantidad de ataques maliciosos que se encuentra hoy en dia</td>
+                        </tr>
+                        <tr>
+                            <td>Arquitectura de Software</td>
+                            <td>Diseño de Sistemas</td>
+                            <td>5.º</td>
+                            <td>Quiero diseñar soluciones escalables para futuros proyectos grandes.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <footer class="pie-joan">
+        <p>&copy; 2025 Joan Tepan</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Contacto con Joan Tepan</title>
+    <link rel="stylesheet" href="diseno_joan.css">
+    <script src="logica_formulario.js" defer></script>
+</head>
+<body data-pagina="contacto">
+    <header class="cabecera-joan">
+        <div class="cabecera-contenido">
+            <span class="etiqueta-sitio">Contacto</span>
+            <h1 class="titulo-principal">Joan Tepan</h1>
+        </div>
+    </header>
+
+    <main class="zona-principal">
+        <section class="bloque-contacto-completo">
+            <h2 class="titulo-seccion-joan">Formulario de contacto</h2>
+            <p class="texto-intro-contacto">
+                Completa el formulario y al enviarlo te mostraremos una página
+                de agradecimiento con el mismo estilo.
+            </p>
+
+            <form id="formulario-contacto-joan" class="formulario-joan" novalidate>
+                <div class="fila-formulario">
+                    <div class="campo-formulario">
+                        <label for="nombre-contacto-joan">Nombre</label>
+                        <input
+                            type="text"
+                            id="nombre-contacto-joan"
+                            name="nombre"
+                            placeholder="Escribe tu nombre"
+                            required
+                            pattern="^[A-Za-zÁÉÍÓÚáéíóúÑñ\\s]+$">
+                        <span class="alerta-error alerta-error-nombre"></span>
+                    </div>
+
+                    <div class="campo-formulario">
+                        <label for="correo-contacto-joan">Correo</label>
+                        <input
+                            type="email"
+                            id="correo-contacto-joan"
+                            name="correo"
+                            placeholder="tucorreo@ejemplo.com"
+                            required>
+                        <span class="alerta-error alerta-error-correo"></span>
+                    </div>
+                </div>
+
+                <div class="campo-formulario">
+                    <label for="mensaje-contacto-joan">Mensaje (máx. 100 caracteres)</label>
+                    <textarea
+                        id="mensaje-contacto-joan"
+                        name="mensaje"
+                        rows="4"
+                        maxlength="100"
+                        placeholder="Escribe tu mensaje"
+                        required></textarea>
+                    <span class="alerta-error alerta-error-mensaje"></span>
+                </div>
+
+                <button type="submit" class="boton-envio">Enviar mensaje</button>
+
+                <p class="texto-exito"></p>
+            </form>
+        </section>
+    </main>
+
+    <footer class="pie-joan">
+        <p>&copy; 2025 Joan Tepan</p>
+    </footer>
+</body>
+</html>
